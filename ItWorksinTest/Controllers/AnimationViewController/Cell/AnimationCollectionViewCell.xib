@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AnimationCollectionViewCell" customModule="ItWorksinTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cae-Yc-iCb">
+                        <rect key="frame" x="8" y="8" width="100" height="100"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_1" translatesAutoresizingMaskIntoConstraints="NO" id="UW8-y9-YQe">
+                                <rect key="frame" x="2" y="31" width="96" height="38"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UW8-y9-YQe" firstAttribute="centerX" secondItem="cae-Yc-iCb" secondAttribute="centerX" id="4ag-7B-Xx1"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="UW8-y9-YQe" secondAttribute="trailing" constant="2" id="Cuk-1T-Nsp"/>
+                            <constraint firstItem="UW8-y9-YQe" firstAttribute="centerY" secondItem="cae-Yc-iCb" secondAttribute="centerY" id="SFh-M6-4Fp"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="UW8-y9-YQe" secondAttribute="bottom" constant="2" id="Z8f-1V-uLV"/>
+                            <constraint firstItem="UW8-y9-YQe" firstAttribute="top" relation="greaterThanOrEqual" secondItem="cae-Yc-iCb" secondAttribute="top" constant="2" id="fCT-ez-ZoH"/>
+                            <constraint firstItem="UW8-y9-YQe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cae-Yc-iCb" secondAttribute="leading" constant="2" id="zqm-bM-XPK"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9p3-1z-7qy">
+                        <rect key="frame" x="2" y="2" width="22" height="22"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkbox_empty_icon" translatesAutoresizingMaskIntoConstraints="NO" id="zvW-Ck-iFQ">
+                                <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="1uD-PU-g2X"/>
+                            <constraint firstItem="zvW-Ck-iFQ" firstAttribute="leading" secondItem="9p3-1z-7qy" secondAttribute="leading" id="9nb-Ah-liL"/>
+                            <constraint firstAttribute="bottom" secondItem="zvW-Ck-iFQ" secondAttribute="bottom" id="O2W-6m-cOd"/>
+                            <constraint firstAttribute="trailing" secondItem="zvW-Ck-iFQ" secondAttribute="trailing" id="St9-9z-neP"/>
+                            <constraint firstItem="zvW-Ck-iFQ" firstAttribute="top" secondItem="9p3-1z-7qy" secondAttribute="top" id="ZL7-M2-bIY"/>
+                            <constraint firstAttribute="width" constant="22" id="ulI-t2-qcA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="9p3-1z-7qy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="8g9-Uc-BXW"/>
+                <constraint firstItem="9p3-1z-7qy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="9ZW-0i-h26"/>
+                <constraint firstItem="cae-Yc-iCb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="JcX-fX-XiD"/>
+                <constraint firstAttribute="bottom" secondItem="cae-Yc-iCb" secondAttribute="bottom" constant="2" id="VR3-ik-PdA"/>
+                <constraint firstAttribute="trailing" secondItem="cae-Yc-iCb" secondAttribute="trailing" constant="2" id="pax-9g-YAT"/>
+                <constraint firstItem="cae-Yc-iCb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="zOk-Q7-xv8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="121" height="110"/>
+            <connections>
+                <outlet property="checkboxImageView" destination="zvW-Ck-iFQ" id="Vyu-50-Zyz"/>
+                <outlet property="checkboxView" destination="9p3-1z-7qy" id="gzl-3i-666"/>
+                <outlet property="containerView" destination="cae-Yc-iCb" id="Uyf-6u-XEg"/>
+                <outlet property="imageView" destination="UW8-y9-YQe" id="ylz-C2-hSv"/>
+            </connections>
+            <point key="canvasLocation" x="188.40579710144928" y="127.90178571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="checkbox_empty_icon" width="22" height="22"/>
+        <image name="image_1" width="98" height="38"/>
+    </resources>
+</document>
